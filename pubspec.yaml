@@ -11,13 +11,17 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  camera: ^0.8.0
+  camera:
+    git:
+      url: https://github.com/camsim99/plugins.git
+      path: packages/camera/camera
+      ref: issue_89578_dev
   flutter_bloc: ^7.3.0
   google_maps_flutter: ^2.0.1
   video_player: ^2.0.2
   flutter_ffmpeg: ^0.4.2
   path_provider: ^2.0.1
-  geolocator: ^7.0.1
+  geolocator: ^7.7.1
   supabase: ^0.2.4
   flutter_feather_icons: ^2.0.0+1
   flutter_secure_storage: ^4.1.0
@@ -32,6 +36,9 @@ dependencies:
   flutter_video_info: ^1.2.0
   shared_preferences: ^2.0.6
   google_maps_cluster_manager: ^3.0.0+1
+
+dependency_overrides:
+  platform: ^3.1.0
 
 dev_dependencies:
   flutter_test:
